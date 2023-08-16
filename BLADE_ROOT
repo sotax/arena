@@ -1,0 +1,16 @@
+cc_config(
+    append = config_items(
+        extra_incs = [
+        ],
+    ),
+    cppflags= [
+        '-std=c++14',
+        '-DNDEBUG',
+    ],
+    optimize = [
+        '-g',
+        '-O2',
+    ],
+    warnings = [
+    ],
+)
