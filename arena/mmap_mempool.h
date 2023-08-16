@@ -70,15 +70,6 @@ class MMapMempool : public Mempool {
 
   static const int64_t kMmapSize_;
   static const int64_t kMaxMempoolSize_;
-
-  //struct MMapTableNode {
-  //  int fd;
-  //  int fd_header;
-  //  char* pFile;
-  //  MMapFileHeader* pHeaderFile;
-  //  int32_t rc;
-  //  char szFileName[PATH_MAX];
-  //};
 };
 
 inline char* MMapMempool::getAddress(const int64_t& offset) {
